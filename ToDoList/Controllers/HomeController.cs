@@ -10,8 +10,9 @@ namespace ToDoList.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
+      // List<Item> allItems = Item.GetAll();
+      // return View(allItems);
+      return View();
     }
 
   }
