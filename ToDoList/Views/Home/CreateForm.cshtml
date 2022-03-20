@@ -10,12 +10,11 @@
 
 <body>
   <div class="container">
-    <h1>To Do List</h1>
-    <ul>
-      <li>@Model.Description</li>
-    </ul>
-
-    <a href="/items/new">Add a new item.</a>
+    <form action="/items" method="post">
+      <label for="description">Add a new item</label>
+      <input id="description" name="description" type="text">
+      <button type="submit">Submit</button>
+    </form>
   </div>
 </body>
 
