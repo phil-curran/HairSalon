@@ -6434,11 +6434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/ToDoList.csproj",
+      "projectUniqueName": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/HairSalon/ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/ToDoList.csproj",
+      "projectPath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/HairSalon/ToDoList.csproj",
       "packagesPath": "/home/xlcm/.nuget/packages/",
-      "outputPath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/",
+      "outputPath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/HairSalon/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/xlcm/.nuget/NuGet/NuGet.Config"

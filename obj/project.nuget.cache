@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ji6pEnr2D+BKw75Gp21r4NnqtOM2nWOZlDJcnyCxrAUipYk4Wmf3f///YyvZBwnoj6nCRYCc7Xt7HlZ5QG9DcQ==",
+  "dgSpecHash": "PjHvyGIRtUqELlJL2TTYbxywgoHXDdQ1hMsXuZWn0h/f+gpqYFX9KaSRb9SOdLxKHCZ4q1PU8Pf4P4kqB/dMMw==",
   "success": true,
-  "projectFilePath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/ToDoList.csproj",
+  "projectFilePath": "/home/xlcm/Desktop/epicodus/3 - C# and .NET/HairSalon/ToDoList.csproj",
   "expectedPackageFiles": [
     "/home/xlcm/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/home/xlcm/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
