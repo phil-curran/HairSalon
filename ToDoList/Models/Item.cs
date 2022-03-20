@@ -18,24 +18,9 @@ namespace ToDoList.Models
       Id = id;
     }
 
-    public override bool Equals(System.Object otherItem)
-    {
-      if (!(otherItem is Item))
-      {
-        return false;
-      }
-      else
-      {
-        Item newItem = (Item)otherItem;
-        bool idEquality = (this.Id == newItem.Id);
-        bool descriptionEquality = (this.Description == newItem.Description);
-        return (idEquality && descriptionEquality);
-      }
-    }
-
     public void Save()
     {
-      MySqlConnection conn = DB.Connection();
+      MySqlConnection conn = new MySqlConnection("server=localhost;userid=root;password=epicodus;port=3306;database=to_do_list;SslMode=None");
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
 
@@ -56,7 +41,7 @@ namespace ToDoList.Models
 
     public static Item Find(int id)
     {
-      MySqlConnection conn = DB.Connection();
+      MySqlConnection conn = new MySqlConnection("server=localhost;userid=root;password=epicodus;port=3306;database=to_do_list;SslMode=None");
       conn.Open();
 
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
@@ -88,7 +73,7 @@ namespace ToDoList.Models
     public static List<Item> GetAll()
     {
       List<Item> allItems = new List<Item> { };
-      MySqlConnection conn = DB.Connection();
+      MySqlConnection conn = new MySqlConnection("server=localhost;userid=root;password=epicodus;port=3306;database=to_do_list;SslMode=None");
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
       cmd.CommandText = "SELECT * FROM items;";
@@ -110,7 +95,7 @@ namespace ToDoList.Models
 
     public static void ClearAll()
     {
-      MySqlConnection conn = DB.Connection();
+      MySqlConnection conn = new MySqlConnection("server=localhost;userid=root;password=epicodus;port=3306;database=to_do_list;SslMode=None");
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
       cmd.CommandText = "DELETE FROM items;";
