@@ -6,15 +6,28 @@
 
 <h1 class="is-size-1 has-text-centered">Items in this Category:</h1>
 
-<ol>
-  @foreach (Item item in @Model["items"])
-  {
-    <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
-  }
-</ol>
+<div class="block">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/categories">Categories</a></li>
+      <li class="is-active"><a href="#" aria-current="page">Category Detail</a></li>
+    </ul>
+  </nav>
+</div>
 
-<p><a href='/categories/@Model["category"].Id/items/new'>Add a new item</a></p>
-<p><a href='/categories'>Return to category list</a></p>
-<p><a href='/'>Return to Main Page</a></p>
+<div class="block">
 
-<p>Views / Categories / Show</p>
+  <ol>
+    @foreach (Item item in @Model["items"])
+    {
+      <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
+    }
+  </ol>
+</div>
+
+<div class="block">
+  <a class="button is-info" href='/categories/@Model["category"].Id/items/new'>Add a new item</a>
+</div>
+
+<p class="viewMap">Views / Categories / Show</p>

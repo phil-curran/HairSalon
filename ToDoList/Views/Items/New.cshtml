@@ -2,13 +2,28 @@
   Layout = "_Layout";
 }
 
-<h1>Add a new item to @Model.Name</h1>
+<h1 class="is-size-1 has-text-centered">Add a new item to @Model.Name</h1>
 
-<form action="/categories/@Model.Id/items" method="post">
-  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
-  <label for="itemDescription">Item Description</label>
-  <input id="itemDescription" name="itemDescription" type="text">
-  <button type='submit'>Add Item</button>
-</form>
+<div class="block">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="/items">Items</a></li>
+      <li class="is-active"><a href="#" aria-current="page">Add Item</a></li>
+    </ul>
+  </nav>
+</div>
 
-<p>Views / Items / New</p>
+<div class="block">
+  <form action="/categories/@Model.Id/items" method="post">
+    <div class="field has-addons">
+      <div class="control">
+        <input class="input" id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+        <input class="input" id="itemDescription" name="itemDescription" type="text" placeholder="Item Description">
+      </div>
+      <button class="button is-info" type='submit'>Add Item</button>
+    </div>
+  </form>
+</div>
+
+<p class="viewMap">Views / Items / New</p>

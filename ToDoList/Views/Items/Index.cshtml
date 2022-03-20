@@ -4,23 +4,34 @@
   Layout = "_Layout";
 }
 
-<h1>To Do List</h1>
+<h1 class="is-size-1 has-text-centered">To Do List</h1>
 
-@if (Model.Count == 0)
-{
-  <p>There are no items in the list.</p>
-}
-<ul>
-  @foreach (Item item in Model)
+<div class="block">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="is-active"><a href="#" aria-current="page">Items</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="block">
+  @if (Model.Count == 0)
   {
-    <li><a href='/items/@item.Id'>@item.Description</a></li>
+    <p>There are no items in the list.</p>
   }
-</ul>
+  <ul>
+    @foreach (Item item in Model)
+    {
+      <li><a href='/items/@item.Id'>@item.Description</a></li>
+    }
+  </ul>
+</div>
 
-<a href="/items/new">Add a new item.</a>
+<div class="block">
+  <form action="/items/delete" method="post">
+    <button class="button is-danger" type="submit" name="button">Clear All Items</button>
+  </form>
+</div>
 
-<form action="/items/delete" method="post">
-  <button type="submit" name="button">Clear All Items</button>
-</form>
-
-<p>Views / Items / Index</p>
+<p class="viewMap">Views / Items / Index</p>
