@@ -19,6 +19,20 @@ namespace ToDoList.Models
       Id = id;
     }
 
+    public override bool Equals(System.Object otherItem)
+    {
+      if (!(otherItem is Item))
+      {
+        return false;
+      }
+      else
+      {
+        Item newItem = (Item)otherItem;
+        bool descriptionEquality = (this.Description == newItem.Description);
+        return descriptionEquality;
+      }
+    }
+
     public static Item Find(int searchId)
     {
       // Temporarily returning placeholder item to get beyond compiler errors until we refactor to work with database.
