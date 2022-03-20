@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html>
+@{
+  Layout = "_Layout";
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>My To-Do List!</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+<form action="/items" method="post">
+  <label for="description">Add a new item</label>
+  <input id="description" name="description" type="text">
+  <button type="submit">Submit</button>
+</form>
 
-<body>
-  <div class="container">
-    <form action="/items" method="post">
-      <label for="description">Add a new item</label>
-      <input id="description" name="description" type="text">
-      <button type="submit">Submit</button>
-    </form>
-
-    <p>Views / Home / CreateForm</p>
-  </div>
-</body>
-
-</html>
+<p>Views / Home / CreateForm</p>
