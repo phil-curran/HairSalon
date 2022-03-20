@@ -1,0 +1,8 @@
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.csproj.AssemblyReference.cache
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.GeneratedMSBuildEditorConfig.editorconfig
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.AssemblyInfoInputs.cache
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.AssemblyInfo.cs
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.csproj.CoreCompileInputs.cache
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.MvcApplicationPartsAssemblyInfo.cache
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.RazorAssemblyInfo.cache
+/home/xlcm/Desktop/epicodus/3 - C# and .NET/ToDoList.Solution/HairSalon/obj/Debug/net6.0/ToDoList.RazorAssemblyInfo.cs
